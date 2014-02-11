@@ -9,4 +9,4 @@ Demo with usage of this CalendarView will be added asap.
 
 TODO:
 -----
-+ make it configurable, so that no intervention in library is requiered
++ make it configurable, so that no intervention in library is required
