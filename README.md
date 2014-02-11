@@ -9,4 +9,5 @@ Demo with usage of this CalendarView will be added asap.
 
 TODO:
 -----
++ put usage example on github
 + make it configurable, so that no intervention in library is required
