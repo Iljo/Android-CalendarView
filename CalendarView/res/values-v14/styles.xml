@@ -1,7 +1,9 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
@@ -23,14 +25,14 @@
         <item name="android:height">@dimen/cal_cell_height</item>
         <item name="android:textSize">@dimen/cal_day_unfocued</item>
     </style>
-    
-    
+
     <!--
     Only appearance (base text color, typeface, size, and style), background color and visibility will be applied. 
     If something else should be applied, hack method - TODO :) ...
 
     Every day, hollyday and week number have 3 man styles: regular, before today, and not in month.
-    Furthermore, every day and week number have style for when it's highlighted.    -->
+    Furthermore, every day and week number have style for when it's highlighted.
+    -->
     <!-- REGULAR -->
     <style name="CalendarDay" parent="CalendarCell">
         <item name="android:textColor">#fff</item>
