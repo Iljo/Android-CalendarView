@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1100aaff"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toPreviousMonth"
+            android:text="&lt;"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            style="@style/CalendarCell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mjesec i godina" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toNextMonth"
+            android:text=">"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <org.iljo.android.calendarview.widget.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="#113554a2" />
+    
+    
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#22e2dc68"
+            android:gravity="center"
+            android:numColumns="8"
+            android:verticalSpacing="1dp" >
+        </GridView>
+    </FrameLayout>
+
+
+</LinearLayout>

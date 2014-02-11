@@ -1,0 +1,81 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Calendar, from now on -->
+    <style name="CalendarCell">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">@dimen/cal_cell_height</item>
+        <item name="android:textSize">@dimen/cal_day_unfocued</item>
+    </style>
+    
+    
+    <!--
+    Only appearance (base text color, typeface, size, and style), background color and visibility will be applied. 
+    If something else should be applied, hack method - TODO :) ...
+
+    Every day, hollyday and week number have 3 man styles: regular, before today, and not in month.
+    Furthermore, every day and week number have style for when it's highlighted.    -->
+    <!-- REGULAR -->
+    <style name="CalendarDay" parent="CalendarCell">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="CalendarHollyDay" parent="CalendarCell">
+        <item name="android:textColor">#666</item>
+    </style>
+
+    <style name="CalendarWeekNu" parent="CalendarCell">
+        <item name="android:textColor">#e2dc68</item>
+        <item name="android:background">#ddffffff</item>
+    </style>
+
+    <!-- BEFORE TODAY -->
+    <style name="CalendarDaysBeforeToday" parent="CalendarCell">
+        <item name="android:textColor">#9affffff</item>
+    </style>
+
+    <style name="CalendarHollyDaysBeforeToday" parent="CalendarCell">
+        <item name="android:textColor">#9a666666</item>
+    </style>
+
+    <style name="CalendarWeekNusBeforeToday" parent="CalendarCell">
+        <item name="android:textColor">#e2dc68</item>
+        <item name="android:background">#aaffffff</item>
+    </style>
+
+    <!-- NOT IN MONTH -->
+    <style name="CalendarDayNotInMonth" parent="CalendarCell">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="CalendarWeekNuNotInMonth" parent="CalendarCell">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- HIGHLIGHTED -->
+    <style name="CalendarDayHighlighted" parent="CalendarCell">
+        <item name="android:textColor">#FFE100</item>
+    </style>
+
+    <style name="CalendarWeekNuHighlighted" parent="CalendarCell">
+        <item name="android:textColor">#e2dc68</item>
+        <item name="android:background">#cc0099cc</item>
+    </style>
+
+</resources>

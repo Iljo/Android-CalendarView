@@ -1,0 +1,10 @@
+Elementi u kalendaru su mogli biti postavljeni i pomoću linearLayouta
+	LinearLayout weekListView = (LinearLayout) findViewById(R.id.calendar_week_layout);
+	LayoutParams layoutParams = new LinearLayout.LayoutParams(0, LayoutParams.WRAP_CONTENT, 1);
+	TextView textView = (TextView) View.inflate(this, R.layout.cell_day, null);
+	textView.setText("tekst");
+		
+Za trenutno odabrani dan, koristenje stilova djeluje prilagodljivije u slucaju promjena korisnickih zahtjeva, 
+za razliku od samo mijenjanj same velicine, otom-potom
+	1. dayView.setTextAppearance(getApplicationContext(), R.style.CalendarDayFocused);
+	2. dayView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.cal_day_focued));
