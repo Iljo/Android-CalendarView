@@ -1,5 +1,7 @@
+# generated files
 bin/
 gen/
-proguard-project.txt
 
+# eclipse files
+proguard-project.txt
 .metadata/
