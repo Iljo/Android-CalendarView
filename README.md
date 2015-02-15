@@ -1,5 +1,6 @@
-CalendarView
-============
+~~CalendarView~~
+================
+_Note: Need to find time, and make new calendarView from scratch._
 
 Alternative to official Android CalendarView.
 
